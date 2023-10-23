@@ -1,0 +1,2 @@
+men(vlad).
+men(george).
