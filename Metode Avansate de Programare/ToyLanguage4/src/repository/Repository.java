@@ -7,6 +7,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,7 +23,7 @@ public class Repository implements RepositoryInterface {
         } catch (IOException exception) {
             throw new InterpreterException(exception.getMessage());
         }
-        programStatesList = new LinkedList<ProgramState>();
+        programStatesList = new ArrayList<ProgramState>();
         this.logFilePath = logFilePath;
     }
 
@@ -51,6 +52,25 @@ public class Repository implements RepositoryInterface {
         if(program.getExecutionStack().isEmpty()) {
             logFile.close();
         }
+    }
+
+    public void resetLogFile() throws InterpreterException {
+        PrintWriter logFile;
+        try {
+            /*
+            The buffer makes the writing process more efficient (it writes to the file in chunks, not one character
+            at a time)
+             */
+            logFile = new PrintWriter(new BufferedWriter(new FileWriter(this.logFilePath, false)));
+        } catch (IOException exception) {
+            throw new InterpreterException(exception.getMessage());
+        }
+        logFile.println("");
+        /*
+        Write the buffered characters to the file, if the stream has saved any characters from the various write()
+         */
+        logFile.flush();
+        logFile.close();
     }
 
     public void resetProgramStates() throws InterpreterException {

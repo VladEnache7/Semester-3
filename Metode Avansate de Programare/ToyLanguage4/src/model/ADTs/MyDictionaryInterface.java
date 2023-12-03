@@ -42,5 +42,5 @@ public interface MyDictionaryInterface<AnyTypeKey, AnyTypeValue> {
     Collection<AnyTypeValue> values();
 
 
-    MyDictionaryInterface<AnyTypeKey,AnyTypeValue> deepCopy();
+    MyDictionaryInterface<AnyTypeKey,AnyTypeValue> deepCopy() throws InterpreterException;
 }

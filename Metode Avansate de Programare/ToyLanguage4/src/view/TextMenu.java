@@ -9,11 +9,11 @@ import java.util.Scanner;
 
 public class TextMenu {
     private final Map<String, Command> commands;
-    private final Map<String, Boolean> executedCommands;
+//    private final Map<String, Boolean> executedCommands;
 
     public TextMenu() {
         this.commands = new HashMap<>();
-        this.executedCommands = new HashMap<>();
+//        this.executedCommands = new HashMap<>();
     }
 
     public void addCommand(Command c) {
@@ -44,7 +44,7 @@ public class TextMenu {
                 runCommand.resetProgramStates();
             }*/
             command.execute();
-            executedCommands.put(key, true);
+//            executedCommands.put(key, true);
         }
     }
 }

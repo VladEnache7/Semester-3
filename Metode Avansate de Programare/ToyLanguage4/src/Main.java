@@ -66,9 +66,13 @@ public class Main {
             repository8.addProgram(programState8);
             Controller controller8 = new Controller(repository8);
 
+            StatementInterface example9 = examples[8];
+            ProgramState programState9 = new ProgramState(new MyStack<>(), new MyDictionary<>(), new MyList<>(), new MyDictionary<>(), new MyHeap<>(), example9);
+            RepositoryInterface repository9 = new Repository("log9.txt");
+            repository9.addProgram(programState9);
+            Controller controller9 = new Controller(repository9);
 
-
-
+            
             TextMenu menu = new TextMenu();
             menu.addCommand(new ExitCommand("0", "exit"));
             menu.addCommand(new RunCommand("1", example1.toString(), controller1));
@@ -79,6 +83,7 @@ public class Main {
             menu.addCommand(new RunCommand("6", example6.toString(), controller6));
             menu.addCommand(new RunCommand("7", example7.toString(), controller7));
             menu.addCommand(new RunCommand("8", example8.toString(), controller8));
+            menu.addCommand(new RunCommand("9", example9.toString(), controller9));
 
 
             menu.show();

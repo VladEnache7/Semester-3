@@ -1,4 +1,6 @@
-------- Current Program State ------
+
+------- Program State: ------
+ID = 7
 executionStack = 
 | (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5))))) |
 , heap = {}
@@ -8,7 +10,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 | Ref(int) v |
 | (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))) |
@@ -19,7 +22,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 | (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))) |
 , heap = {}
@@ -29,7 +33,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 | new(v, 20) |
 | (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5))) |
@@ -40,7 +45,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 | (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5))) |
 , heap = {1=20}
@@ -50,7 +56,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 | print(readHeap(v)) |
 | (writeHeap(v, 30); print(readHeap(v) + 5)) |
@@ -61,7 +68,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 | (writeHeap(v, 30); print(readHeap(v) + 5)) |
 , heap = {1=20}
@@ -71,7 +79,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 | writeHeap(v, 30) |
 | print(readHeap(v) + 5) |
@@ -82,7 +91,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 | print(readHeap(v) + 5) |
 , heap = {1=30}
@@ -92,7 +102,8 @@ executionStack =
 , originalProgram = (Ref(int) v; (new(v, 20); (print(readHeap(v)); (writeHeap(v, 30); print(readHeap(v) + 5)))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 7
 executionStack = 
 
 , heap = {1=30}

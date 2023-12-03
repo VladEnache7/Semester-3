@@ -1,0 +1,69 @@
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (int v; (v = 2; print(v))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int v |
+| (v = 2; print(v)) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (v = 2; print(v)) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| v = 2 |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(v) |
+, heap = {}
+, symbolTable = {v = 2}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+
+, heap = {}
+, symbolTable = {v = 2}
+, output = [2]
+, fileTable = {}
+, originalProgram = (int v; (v = 2; print(v)))
+
+

@@ -18,11 +18,12 @@ public class RunCommand extends Command {
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
-        try {
+        /*I am not sure how to reset the Program States now*/
+        /*try {
             controller.resetProgramStates();
         } catch (InterpreterException e) {
             throw new RuntimeException(e);
-        }
+        }*/
     }
     public void resetProgramStates() throws InterpreterException {
         controller.resetProgramStates();

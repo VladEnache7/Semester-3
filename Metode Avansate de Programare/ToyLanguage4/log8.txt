@@ -1,4 +1,6 @@
-------- Current Program State ------
+
+------- Program State: ------
+ID = 8
 executionStack = 
 | (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v)))) |
 , heap = {}
@@ -8,7 +10,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | int v |
 | (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))) |
@@ -19,7 +22,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))) |
 , heap = {}
@@ -29,7 +33,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | v = 4 |
 | (while(v > 0) { (print(v); v = v - 1) }; print(v)) |
@@ -40,7 +45,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | (while(v > 0) { (print(v); v = v - 1) }; print(v)) |
 , heap = {}
@@ -50,7 +56,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | while(v > 0) { (print(v); v = v - 1) } |
 | print(v) |
@@ -61,7 +68,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | (print(v); v = v - 1) |
 | while(v > 0) { (print(v); v = v - 1) } |
@@ -73,7 +81,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | print(v) |
 | v = v - 1 |
@@ -86,7 +95,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | v = v - 1 |
 | while(v > 0) { (print(v); v = v - 1) } |
@@ -98,7 +108,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | while(v > 0) { (print(v); v = v - 1) } |
 | print(v) |
@@ -109,7 +120,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | (print(v); v = v - 1) |
 | while(v > 0) { (print(v); v = v - 1) } |
@@ -121,7 +133,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | print(v) |
 | v = v - 1 |
@@ -134,7 +147,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | v = v - 1 |
 | while(v > 0) { (print(v); v = v - 1) } |
@@ -146,7 +160,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | while(v > 0) { (print(v); v = v - 1) } |
 | print(v) |
@@ -157,7 +172,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | (print(v); v = v - 1) |
 | while(v > 0) { (print(v); v = v - 1) } |
@@ -169,7 +185,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | print(v) |
 | v = v - 1 |
@@ -182,7 +199,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | v = v - 1 |
 | while(v > 0) { (print(v); v = v - 1) } |
@@ -194,7 +212,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | while(v > 0) { (print(v); v = v - 1) } |
 | print(v) |
@@ -205,282 +224,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
-executionStack = 
-| (print(v); v = v - 1) |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 1}
-, output = [4, 3, 2]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| print(v) |
-| v = v - 1 |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 1}
-, output = [4, 3, 2]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| v = v - 1 |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 1}
-, output = [4, 3, 2, 1]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 0}
-, output = [4, 3, 2, 1]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| print(v) |
-, heap = {}
-, symbolTable = {v = 0}
-, output = [4, 3, 2, 1]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-
-, heap = {}
-, symbolTable = {v = 0}
-, output = [4, 3, 2, 1, 0]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v)))) |
-, heap = {}
-, symbolTable = {}
-, output = []
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| int v |
-| (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))) |
-, heap = {}
-, symbolTable = {}
-, output = []
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))) |
-, heap = {}
-, symbolTable = {v = 0}
-, output = []
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| v = 4 |
-| (while(v > 0) { (print(v); v = v - 1) }; print(v)) |
-, heap = {}
-, symbolTable = {v = 0}
-, output = []
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| (while(v > 0) { (print(v); v = v - 1) }; print(v)) |
-, heap = {}
-, symbolTable = {v = 4}
-, output = []
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 4}
-, output = []
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| (print(v); v = v - 1) |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 4}
-, output = []
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| print(v) |
-| v = v - 1 |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 4}
-, output = []
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| v = v - 1 |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 4}
-, output = [4]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 3}
-, output = [4]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| (print(v); v = v - 1) |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 3}
-, output = [4]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| print(v) |
-| v = v - 1 |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 3}
-, output = [4]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| v = v - 1 |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 3}
-, output = [4, 3]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 2}
-, output = [4, 3]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| (print(v); v = v - 1) |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 2}
-, output = [4, 3]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| print(v) |
-| v = v - 1 |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 2}
-, output = [4, 3]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| v = v - 1 |
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 2}
-, output = [4, 3, 2]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
-executionStack = 
-| while(v > 0) { (print(v); v = v - 1) } |
-| print(v) |
-, heap = {}
-, symbolTable = {v = 1}
-, output = [4, 3, 2]
-, fileTable = {}
-, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
-
-
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | (print(v); v = v - 1) |
 | while(v > 0) { (print(v); v = v - 1) } |
@@ -492,7 +237,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | print(v) |
 | v = v - 1 |
@@ -505,7 +251,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | v = v - 1 |
 | while(v > 0) { (print(v); v = v - 1) } |
@@ -517,7 +264,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | while(v > 0) { (print(v); v = v - 1) } |
 | print(v) |
@@ -528,7 +276,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 | print(v) |
 , heap = {}
@@ -538,7 +287,8 @@ executionStack =
 , originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
 
 
-------- Current Program State ------
+------- Program State: ------
+ID = 8
 executionStack = 
 
 , heap = {}

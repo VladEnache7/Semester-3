@@ -179,8 +179,41 @@ public class Examples {
                     )
             )
     );
+    // int v; Ref int a; v=10;new(a,22);
+    // fork(wH(a,30);v=32;print(v);print(rH(a)));
+    // print(v);print(rH(a))
+    static StatementInterface example9 = new CompoundStatement(
+            new VariableDeclarationStatement("v", new IntType()),
+            new CompoundStatement(
+                    new VariableDeclarationStatement("a", new RefType(new IntType())),
+                    new CompoundStatement(
+                            new AssignStatement("v", new ValueExpression(new IntValue(10))),
+                            new CompoundStatement(
+                                    new HeapAllocationStatement("a", new ValueExpression(new IntValue(22))),
+                                    new CompoundStatement(
+                                            new ForkStatement(
+                                                    new CompoundStatement(
+                                                            new HeapWritingStatement("a", new ValueExpression(new IntValue(30))),
+                                                            new CompoundStatement(
+                                                                    new AssignStatement("v", new ValueExpression(new IntValue(32))),
+                                                                    new CompoundStatement(
+                                                                            new PrintStatement(new VariableExpression("v")),
+                                                                            new PrintStatement(new HeapReadingExpression(new VariableExpression("a")))
+                                                                    )
+                                                            )
+                                                    )
+                                            ),
+                                            new CompoundStatement(
+                                                    new PrintStatement(new VariableExpression("v")),
+                                                    new PrintStatement(new HeapReadingExpression(new VariableExpression("a")))
+                                            )
+                                    )
+                            )
+                    )
+            )
+    );
 
     public static StatementInterface[] exampleList(){
-        return new StatementInterface[]{example1, example2, example3, example4, example5, example6, example7, example8};
+        return new StatementInterface[]{example1, example2, example3, example4, example5, example6, example7, example8, example9};
     }
 }

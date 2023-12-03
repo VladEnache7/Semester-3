@@ -1,0 +1,127 @@
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| bool a |
+| (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))) |
+, heap = {}
+, symbolTable = {a = false}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| int v |
+| (a = true; (if (a) then (v = 2) else (v = 3); print(v))) |
+, heap = {}
+, symbolTable = {a = false}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (a = true; (if (a) then (v = 2) else (v = 3); print(v))) |
+, heap = {}
+, symbolTable = {a = false, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| a = true |
+| (if (a) then (v = 2) else (v = 3); print(v)) |
+, heap = {}
+, symbolTable = {a = false, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (if (a) then (v = 2) else (v = 3); print(v)) |
+, heap = {}
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| if (a) then (v = 2) else (v = 3) |
+| print(v) |
+, heap = {}
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| v = 2 |
+| print(v) |
+, heap = {}
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| print(v) |
+, heap = {}
+, symbolTable = {a = true, v = 2}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+
+, heap = {}
+, symbolTable = {a = true, v = 2}
+, output = [2]
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+

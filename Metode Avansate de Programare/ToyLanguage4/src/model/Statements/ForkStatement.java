@@ -1,5 +1,6 @@
 package model.Statements;
 
+import exceptions.InterpreterException;
 import model.ADTs.MyDictionaryInterface;
 import model.ADTs.MyStack;
 import model.ADTs.MyStackInterface;
@@ -19,11 +20,12 @@ public class ForkStatement implements StatementInterface {
     }
 
     @Override
-    public ProgramState execute(ProgramState state) {
+    public ProgramState execute(ProgramState state) throws InterpreterException {
         MyStackInterface<StatementInterface> newExecutionStack = new MyStack<>();
-        newExecutionStack.push(forkStatement);
+//        newExecutionStack.push(forkStatement);
         MyDictionaryInterface<String, Value> newSymbolTable = state.getSymbolTable().deepCopy();
-        return new ProgramState(newExecutionStack, newSymbolTable, state.getOutput(), state.getFileTable(), state.getHeap(), forkStatement);
+        ProgramState newProgramState = new ProgramState(newExecutionStack, newSymbolTable, state.getOutput(), state.getFileTable(), state.getHeap(), forkStatement);
+        return newProgramState;
     }
 
     @Override

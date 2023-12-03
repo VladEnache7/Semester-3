@@ -19,4 +19,5 @@ public interface RepositoryInterface {
 
     ProgramState getProgramStateWithId(int currentId);
 
+    void resetLogFile() throws InterpreterException;
 }
