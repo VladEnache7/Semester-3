@@ -1,0 +1,50 @@
+------- Current Program State ------
+executionStack = 
+| (int v; (v = 2; print(v))) |
+, symbolTable = {}
+, output = []
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Current Program State ------
+executionStack = 
+| int v |
+| (v = 2; print(v)) |
+, symbolTable = {}
+, output = []
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Current Program State ------
+executionStack = 
+| (v = 2; print(v)) |
+, symbolTable = {v = 0}
+, output = []
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Current Program State ------
+executionStack = 
+| v = 2 |
+| print(v) |
+, symbolTable = {v = 0}
+, output = []
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Current Program State ------
+executionStack = 
+| print(v) |
+, symbolTable = {v = 2}
+, output = []
+, originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Current Program State ------
+executionStack = 
+
+, symbolTable = {v = 2}
+, output = [2]
+, originalProgram = (int v; (v = 2; print(v)))
+
+

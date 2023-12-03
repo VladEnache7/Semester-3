@@ -1,0 +1,227 @@
+------- Current Program State ------
+executionStack = 
+| (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v))))) |
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| bool a |
+| (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))) |
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v))))) |
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| bool a |
+| (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))) |
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))) |
+, symbolTable = {a = false}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| int v |
+| (a = true; (if (a) then (v = 2) else (v = 3); print(v))) |
+, symbolTable = {a = false}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| (a = true; (if (a) then (v = 2) else (v = 3); print(v))) |
+, symbolTable = {a = false, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| a = true |
+| (if (a) then (v = 2) else (v = 3); print(v)) |
+, symbolTable = {a = false, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| (if (a) then (v = 2) else (v = 3); print(v)) |
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| if (a) then (v = 2) else (v = 3) |
+| print(v) |
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| v = 2 |
+| print(v) |
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| print(v) |
+, symbolTable = {a = true, v = 2}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+
+, symbolTable = {a = true, v = 2}
+, output = [2]
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v))))) |
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| bool a |
+| (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))) |
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))) |
+, symbolTable = {a = false}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| int v |
+| (a = true; (if (a) then (v = 2) else (v = 3); print(v))) |
+, symbolTable = {a = false}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| (a = true; (if (a) then (v = 2) else (v = 3); print(v))) |
+, symbolTable = {a = false, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| a = true |
+| (if (a) then (v = 2) else (v = 3); print(v)) |
+, symbolTable = {a = false, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| (if (a) then (v = 2) else (v = 3); print(v)) |
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| if (a) then (v = 2) else (v = 3) |
+| print(v) |
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| v = 2 |
+| print(v) |
+, symbolTable = {a = true, v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+| print(v) |
+, symbolTable = {a = true, v = 2}
+, output = []
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+
+------- Current Program State ------
+executionStack = 
+
+, symbolTable = {a = true, v = 2}
+, output = [2]
+, fileTable = {}
+, originalProgram = (bool a; (int v; (a = true; (if (a) then (v = 2) else (v = 3); print(v)))))
+
+

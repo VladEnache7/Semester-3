@@ -1,0 +1,125 @@
+------- Current Program State ------
+executionStack = 
+| (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5)))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| Ref(int) v |
+| (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))) |
+, heap = {}
+, symbolTable = {v = (0, int)}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| new(v, 20) |
+| (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5)))) |
+, heap = {}
+, symbolTable = {v = (0, int)}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5)))) |
+, heap = {1=20}
+, symbolTable = {v = (1, int)}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| Ref(Ref(int)) a |
+| (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))) |
+, heap = {1=20}
+, symbolTable = {v = (1, int)}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))) |
+, heap = {1=20}
+, symbolTable = {a = (0, Ref(int)), v = (1, int)}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| new(a, v) |
+| (print(readHeap(v)); print(readHeap(readHeap(a)) + 5)) |
+, heap = {1=20}
+, symbolTable = {a = (0, Ref(int)), v = (1, int)}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| (print(readHeap(v)); print(readHeap(readHeap(a)) + 5)) |
+, heap = {1=20, 2=(1, int)}
+, symbolTable = {a = (2, Ref(int)), v = (1, int)}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| print(readHeap(v)) |
+| print(readHeap(readHeap(a)) + 5) |
+, heap = {1=20, 2=(1, int)}
+, symbolTable = {a = (2, Ref(int)), v = (1, int)}
+, output = []
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+| print(readHeap(readHeap(a)) + 5) |
+, heap = {1=20, 2=(1, int)}
+, symbolTable = {a = (2, Ref(int)), v = (1, int)}
+, output = [20]
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+
+------- Current Program State ------
+executionStack = 
+
+, heap = {1=20, 2=(1, int)}
+, symbolTable = {a = (2, Ref(int)), v = (1, int)}
+, output = [20, 25]
+, fileTable = {}
+, originalProgram = (Ref(int) v; (new(v, 20); (Ref(Ref(int)) a; (new(a, v); (print(readHeap(v)); print(readHeap(readHeap(a)) + 5))))))
+
+

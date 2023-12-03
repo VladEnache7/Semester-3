@@ -1,0 +1,13 @@
+# ninja log v5
+0	1508	7209781108221049	CMakeFiles/Lab3_multiplexChatExample_client.dir/main.cpp.obj	c43cd4895e8e426b
+1511	1690	7209781110070719	Lab3_multiplexChatExample_client.exe	c1e0f79ccb80e5d8
+4	1113	7209781602023960	CMakeFiles/Lab3_multiplexChatExample_client.dir/main.cpp.obj	c43cd4895e8e426b
+1113	1239	7209781603318214	Lab3_multiplexChatExample_client.exe	c1e0f79ccb80e5d8
+3	995	7209783014120147	CMakeFiles/Lab3_multiplexChatExample_client.dir/main.cpp.obj	c43cd4895e8e426b
+996	1116	7209783015330462	Lab3_multiplexChatExample_client.exe	c1e0f79ccb80e5d8
+3	1169	7209789414687872	CMakeFiles/Lab3_multiplexChatExample_client.dir/main.cpp.obj	c43cd4895e8e426b
+1169	1305	7209789415950465	Lab3_multiplexChatExample_client.exe	c1e0f79ccb80e5d8
+4	1099	7209789586931889	CMakeFiles/Lab3_multiplexChatExample_client.dir/main.cpp.obj	c43cd4895e8e426b
+1100	1219	7209789588186346	Lab3_multiplexChatExample_client.exe	c1e0f79ccb80e5d8
+3	1099	7209795173757399	CMakeFiles/Lab3_multiplexChatExample_client.dir/main.cpp.obj	c43cd4895e8e426b
+1099	1252	7209795175256098	Lab3_multiplexChatExample_client.exe	c1e0f79ccb80e5d8

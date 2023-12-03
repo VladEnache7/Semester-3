@@ -1,0 +1,3 @@
+C:/Users/Admin/Documents/GitHub/SEMESTER 3/Semester-3/Retele de Calculatoare/Lecture1_example/cmake-build-debug/CMakeFiles/Lecture1_example.dir
+C:/Users/Admin/Documents/GitHub/SEMESTER 3/Semester-3/Retele de Calculatoare/Lecture1_example/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Documents/GitHub/SEMESTER 3/Semester-3/Retele de Calculatoare/Lecture1_example/cmake-build-debug/CMakeFiles/rebuild_cache.dir
