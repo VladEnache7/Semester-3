@@ -1,0 +1,207 @@
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| string varf |
+| (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))) |
+, heap = {}
+, symbolTable = {varf = Empty String}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| varf = test.in |
+| (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))) |
+, heap = {}
+, symbolTable = {varf = Empty String}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))))) |
+, heap = {}
+, symbolTable = {varf = test.in}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| open(varf) |
+| (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))) |
+, heap = {}
+, symbolTable = {varf = test.in}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))) |
+, heap = {}
+, symbolTable = {varf = test.in}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| int varc |
+| (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))) |
+, heap = {}
+, symbolTable = {varf = test.in}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf))))) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| readFile(varf, varc) |
+| (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| print(varc) |
+| (readFile(varf, varc); (print(varc); closeFile(varf))) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (readFile(varf, varc); (print(varc); closeFile(varf))) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = [0]
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| readFile(varf, varc) |
+| (print(varc); closeFile(varf)) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = [0]
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (print(varc); closeFile(varf)) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = [0]
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| print(varc) |
+| closeFile(varf) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = [0]
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| closeFile(varf) |
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = [0, 0]
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+
+, heap = {}
+, symbolTable = {varf = test.in, varc = 0}
+, output = [0, 0]
+, fileTable = {}
+, originalProgram = (string varf; (varf = test.in; (open(varf); (int varc; (readFile(varf, varc); (print(varc); (readFile(varf, varc); (print(varc); closeFile(varf)))))))))
+
+

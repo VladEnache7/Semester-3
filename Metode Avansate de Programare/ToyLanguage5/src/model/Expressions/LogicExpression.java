@@ -1,0 +1,72 @@
+package model.Expressions;
+
+import exceptions.InterpreterException;
+import model.ADTs.MyDictionaryInterface;
+import model.ADTs.MyHeapInterface;
+import model.Types.BoolType;
+import model.Types.Type;
+import model.Values.BoolValue;
+import model.Values.Value;
+
+public class LogicExpression implements Expression {
+    private final String operator;
+    private final Expression expression1;
+    private final Expression expression2;
+
+
+    public LogicExpression(String operator, Expression expression1, Expression expression2) {
+        this.operator = operator;
+        this.expression1 = expression1;
+        this.expression2 = expression2;
+    }
+
+    @Override
+    public Value evaluate(MyDictionaryInterface<String, Value> table, MyHeapInterface<Value> heap) throws InterpreterException {
+        Value value1, value2;
+        value1 = expression1.evaluate(table, heap);
+
+        if (value1.getType().equals(new BoolType())){
+            value2 = expression2.evaluate(table, heap);
+            if (value2.getType().equals(new BoolType())){
+                boolean boolean1, boolean2;
+                boolean1 = ((BoolValue) value1).getValue();
+                boolean2 = ((BoolValue) value2).getValue();
+                return switch (operator.toLowerCase()) {
+                    case "and" -> new BoolValue(boolean1 && boolean2);
+                    case "or" -> new BoolValue(boolean1 || boolean2);
+                    default -> throw new InterpreterException("Invalid operator! Either 'and' or 'or'!");
+                };
+            } else {
+                throw new InterpreterException("Second operand is not a boolean!");
+            }
+        } else {
+            throw new InterpreterException("First operand is not a boolean!");
+        }
+    }
+
+    @Override
+    public Expression deepCopy() {
+        return new LogicExpression(operator, expression1.deepCopy(), expression2.deepCopy());
+    }
+
+    @Override
+    public Type typeCheck(MyDictionaryInterface<String, Type> typeEnvironment) throws InterpreterException {
+        Type type1, type2;
+        type1 = expression1.typeCheck(typeEnvironment);
+        type2 = expression2.typeCheck(typeEnvironment);
+        if (type1.equals(new BoolType())){
+            if (type2.equals(new BoolType())){
+                return new BoolType();
+            } else {
+                throw new InterpreterException("Second operand is not a boolean!");
+            }
+        } else {
+            throw new InterpreterException("First operand is not a boolean!");
+        }
+    }
+
+    @Override
+    public String toString(){
+        return expression1.toString() + " " + operator + " " + expression2.toString();
+    }
+}
