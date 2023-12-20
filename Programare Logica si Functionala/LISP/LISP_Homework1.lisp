@@ -10,8 +10,8 @@
 
 ; Mathematical model:
 ; removeN(l1...ln, n, i) = [], n = 0
-;                         = l1 U removeN(l2...ln, n, i+1), i % n = 0
-;                         = removeN(l2...ln, n, i+1), otherwise
+;                         = removeN(l2...ln, n, i+1), i % n = 0
+;                         = l1 U removeN(l2...ln, n, i+1), otherwise
 
 ; removeN(L - list, N - integer, I - index)
 (defun removeN (lst n i)
@@ -22,6 +22,8 @@
     )
 )
 
+; Mathematical model:
+;removeNCaller(l1..ln, n) = removeN(removeN, n, 1)
 (defun removeNCaller(lst n)
     (removeN lst n 1)
 )
@@ -86,10 +88,6 @@
         (t (minAll (cdr lst) (car lst)))
     )
 )
-
-
-
-
 
 
 ; ------------------------------- d) -------------------------------

@@ -5,233 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18fd07f3-54c9-4648-8981-407c2c5c46ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/ToyLanguage.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/exceptions/InterpreterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/ADTs/MyDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/ADTs/MyDictionaryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/ADTs/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/ADTs/MyListInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/ADTs/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/ADTs/MyStackInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Expressions/ArithmeticExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Expressions/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Expressions/LogicExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Expressions/ValueExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Expressions/VariableExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/ProgramState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Statements/AssignStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Statements/CompoundStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Statements/IfStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Statements/NopStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Statements/PrintStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Statements/StatementInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Statements/VariableDeclarationStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Types/BoolType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Types/IntType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Types/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Values/BoolValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Values/IntValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/model/Values/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/repository/RepositoryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/view/Examples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage/src/view/UserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/exceptions/InterpreterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/ADTs/MyDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/ADTs/MyDictionaryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/ADTs/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/ADTs/MyListInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/ADTs/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/ADTs/MyStackInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Expressions/ArithmeticExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Expressions/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Expressions/LogicExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Expressions/RelationalExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Expressions/ValueExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Expressions/VariableExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/ProgramState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/AssignStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/CloseReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/CompoundStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/IfStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/NopStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/OpenReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/PrintStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/ReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/StatementInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Statements/VariableDeclarationStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Types/BoolType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Types/IntType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Types/StringType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Types/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Values/BoolValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Values/IntValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Values/StringValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/model/Values/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/repository/RepositoryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/view/Commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/view/Commands/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/view/Commands/RunCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/view/Examples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/view/TextMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/src/view/UserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage2/test.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ToyLanguage3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/InterpreterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ADTs/MyDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ADTs/MyDictionaryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ADTs/MyHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ADTs/MyHeapInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ADTs/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ADTs/MyListInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ADTs/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ADTs/MyStackInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Expressions/ArithmeticExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Expressions/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Expressions/HeapReadingExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Expressions/LogicExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Expressions/RelationalExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Expressions/ValueExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Expressions/VariableExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ProgramState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/AssignStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/CloseReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/CompoundStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/HeapAllocationStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/HeapWritingStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/IfStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/NopStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/OpenReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/PrintStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/ReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/StatementInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/VariableDeclarationStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Statements/WhileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Types/BoolType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Types/IntType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Types/RefType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Types/StringType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Types/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Values/BoolValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Values/IntValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Values/RefValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Values/StringValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Values/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/RepositoryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Commands/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Commands/RunCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Examples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/TextMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/UserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/exceptions/InterpreterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ADTs/MyDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ADTs/MyDictionaryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ADTs/MyHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ADTs/MyHeapInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ADTs/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ADTs/MyListInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ADTs/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ADTs/MyStackInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Expressions/ArithmeticExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Expressions/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Expressions/HeapReadingExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Expressions/LogicExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Expressions/RelationalExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Expressions/ValueExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Expressions/VariableExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/ProgramState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/AssignStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/CloseReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/CompoundStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/HeapAllocationStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/HeapWritingStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/IfStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/NopStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/OpenReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/PrintStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/ReadFileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/StatementInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/VariableDeclarationStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Statements/WhileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Types/BoolType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Types/IntType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Types/RefType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Types/StringType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Types/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Values/BoolValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Values/IntValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Values/RefValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Values/StringValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/model/Values/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/repository/RepositoryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/view/Commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/view/Commands/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/view/Commands/RunCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/view/Examples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/view/TextMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/src/view/UserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToyLanguage4/test.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex1/.idea/Lab1_ex1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex1_server_python/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex2/.idea/Lab1_ex2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex2/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex2/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab1_ex3_server_python/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_Python/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_Python/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_client/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_client/.idea/Lab2_example1_client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_client/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_client/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_client/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_client/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_client/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_server/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_server/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_server/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_server/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab2_example1_server/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab3_ex4/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lab3_ex4/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Lecture1_example/.idea/Lecture1_example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTest/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTest/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTest/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTest/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTest/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTest/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTest/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTest/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTestPreparation1/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/NetworkingTestPreparation1/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Python-Sockets-Simply-Explained-YT/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Python-Sockets-Simply-Explained-YT/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Python-Sockets-Simply-Explained-YT/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Simple-TCP-Char-Room_YT/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Simple-TCP-Char-Room_YT/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Retele de Calculatoare/Simple-TCP-Char-Room_YT/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programare Logica si Functionala/first.pl" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programare Logica si Functionala/first.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programare Logica si Functionala/LISP/LISP_Homework1.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programare Logica si Functionala/LISP/LISP_Homework1.lisp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Admin/Documents/GitHub/SEMESTER 3/Semester-3/Metode Avansate de Programare/ToyLanguage3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/Admin/Documents/GitHub/SEMESTER 3/Semester-3/Metode Avansate de Programare/ToyLanguage3/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/GitHub/SEMESTER 3/Semester-3/Metode Avansate de Programare/ToyLanguage3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Admin/Documents/GitHub/SEMESTER 3/Semester-3/Metode Avansate de Programare/ToyLanguage3/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\GitHub\SEMESTER 3\Semester-3\Metode Avansate de Programare\ToyLanguage3" />
@@ -296,6 +70,7 @@
       <workItem from="1701166525651" duration="486000" />
       <workItem from="1701240172936" duration="158000" />
       <workItem from="1701240757832" duration="670000" />
+      <workItem from="1701793321306" duration="315000" />
     </task>
     <servers />
   </component>
