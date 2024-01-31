@@ -33,7 +33,7 @@ public class IfStatement implements StatementInterface {
             else // else it puts to the stack the elseStatement
                 executionStack.push(elseStatement);
         } else
-            throw new InterpreterException("Condition expression is not of type BoolType!");
+            throw new InterpreterException("IfStatement: Condition expression is not of type BoolType!");
         state.setExecutionStack(executionStack);
         //return state; 
 return null;
@@ -52,7 +52,7 @@ return null;
             elseStatement.typeCheck(typeEnvironment.deepCopy());
             return typeEnvironment;
         } else
-            throw new InterpreterException("Condition expression is not of type BoolType!");
+            throw new InterpreterException("IfStatement: Condition expression is not of type BoolType!");
     }
 
     @Override

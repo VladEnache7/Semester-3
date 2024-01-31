@@ -26,10 +26,10 @@ public class AssignStatement implements StatementInterface {
             if (value.getType().equals(typeVariable))
                 symbolTable.update(variableName, value);
             else
-                throw new InterpreterException("Declared type of variable " + variableName + " and type of the assigned expression do not match!");
+                throw new InterpreterException("AssignStatement: Declared type of variable " + variableName + " and type of the assigned expression do not match!");
 
         } else
-            throw new InterpreterException("Variable " + variableName + " is not defined!");
+            throw new InterpreterException("AssignStatement: Variable " + variableName + " is not defined!");
         state.setSymbolTable(symbolTable);
         //return state; 
     return null;
@@ -42,12 +42,13 @@ public class AssignStatement implements StatementInterface {
 
     @Override
     public MyDictionaryInterface<String, Type> typeCheck(MyDictionaryInterface<String, Type> typeEnvironment) throws InterpreterException {
+        //TODO: Add the check if the variable name is defined (maybe I forgot also this somewhere else)
         Type typeVariable = typeEnvironment.lookup(variableName);
         Type typeExpression = expression.typeCheck(typeEnvironment);
         if (typeVariable.equals(typeExpression))
             return typeEnvironment;
         else
-            throw new InterpreterException("Declared type of variable " + variableName + " and type of the assigned expression do not match!");
+            throw new InterpreterException("AssignStatement: Declared type of variable " + variableName + " and type of the assigned expression do not match!");
     }
 
     @Override

@@ -25,18 +25,18 @@ public class HeapWritingStatement implements StatementInterface {
         MyHeapInterface<Value> heap = state.getHeap();
 
         if (!symbolTable.isDefined(this.varName))
-            throw new InterpreterException("Variable " + this.varName + " is not defined in symbolTable!");
+            throw new InterpreterException("HeapWritingStatement: Variable " + this.varName + " is not defined in symbolTable!");
         Value tableVal = symbolTable.lookup(this.varName);
         if (!(tableVal.getType() instanceof RefType))
-            throw new InterpreterException("The value from SymbolTable doesn't have the type RefType!");
+            throw new InterpreterException("HeapWritingStatement: The value from SymbolTable doesn't have the type RefType!");
 
         int refAddress = ((RefValue)tableVal).getAddress();
         if (!heap.exists(refAddress))
-            throw new InterpreterException("Value does not exist on heap");
+            throw new InterpreterException("HeapWritingStatement: Value does not exist on heap");
 
         Value valExpr = this.expression.evaluate(symbolTable, heap);
         if(!valExpr.getType().equals(heap.get(refAddress).getType()))
-            throw new InterpreterException("Expression not of variable type");
+            throw new InterpreterException("HeapWritingStatement: Expression not of variable type");
 
         heap.put(refAddress, valExpr);
         state.setSymbolTable(symbolTable);
@@ -62,6 +62,6 @@ public class HeapWritingStatement implements StatementInterface {
         if(typeVar.equals(new RefType(typeExpr)))
             return typeEnvironment;
         else
-            throw new InterpreterException("The type of the variable and the type of the expression do not match!");
+            throw new InterpreterException("HeapWritingStatement: The type of the variable and the type of the expression do not match!");
     }
 }

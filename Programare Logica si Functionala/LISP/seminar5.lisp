@@ -13,6 +13,6 @@
 )
 
 ; function minposCaller -> wrapper for minpos
-(defun minPosCaller (lst)
+(defun minPosCaller (lst) 
     (minpos lst nil nil 0)
-)
+)  

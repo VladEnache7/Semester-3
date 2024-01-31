@@ -1,0 +1,62 @@
+------- Program State: ------
+ID = 4
+executionStack = 
+| int v |
+| (v = 2; print(v)) |
+-> heap = {}
+-> symbolTable = {}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{}
+-> originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (v = 2; print(v)) |
+-> heap = {}
+-> symbolTable = {v = 0}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{}
+-> originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| v = 2 |
+| print(v) |
+-> heap = {}
+-> symbolTable = {v = 0}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{}
+-> originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| print(v) |
+-> heap = {}
+-> symbolTable = {v = 2}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{}
+-> originalProgram = (int v; (v = 2; print(v)))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+
+-> heap = {}
+-> symbolTable = {v = 2}
+-> output = [2]
+-> fileTable = {}
+-> semaphoreTable{}
+-> originalProgram = (int v; (v = 2; print(v)))
+
+

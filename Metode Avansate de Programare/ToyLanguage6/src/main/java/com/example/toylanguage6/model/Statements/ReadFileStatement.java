@@ -28,22 +28,22 @@ public class ReadFileStatement implements StatementInterface {
 
         // if the variable name is not defined in the symbol table, throw an exception
         if(!symbolTable.isDefined(this.varName))
-            throw new InterpreterException("varName " + this.varName + " is not defined in symbol table");
+            throw new InterpreterException("ReadFileStatement: varName " + this.varName + " is not defined in symbol table");
         Value value = symbolTable.lookup(this.varName);
 
         // if the variable name is not an integer, throw an exception
         if (!value.getType().equals(new IntType()))
-            throw new InterpreterException("ReadFile value is not an integer");
+            throw new InterpreterException("ReadFileStatement: ReadFile value is not an integer");
 
         // evaluate the expressions
         Value valueExpression = expression.evaluate(symbolTable, state.getHeap());
         if(!valueExpression.getType().equals(new StringType()))
-            throw new InterpreterException("ReadFile expression's value type is not a string");
+            throw new InterpreterException("ReadFileStatement: ReadFile expression's value type is not a string");
 
         // if the file is not defined in the file table, throw an exception
         StringValue stringValue = (StringValue) valueExpression;
         if(!state.getFileTable().isDefined(stringValue))
-            throw new InterpreterException("File is not defined in the file table");
+            throw new InterpreterException("ReadFileStatement: File is not defined in the file table");
 
         // read from the file
         try {
@@ -53,7 +53,7 @@ public class ReadFileStatement implements StatementInterface {
             else
                 symbolTable.update(this.varName, new IntValue(Integer.parseInt(line)));
         } catch (java.io.IOException exception) {
-            throw new InterpreterException("Cannot read from file");
+            throw new InterpreterException("ReadFileStatement: Cannot read from file");
         }
         state.setSymbolTable(symbolTable);
         //return state; 
@@ -70,9 +70,9 @@ public class ReadFileStatement implements StatementInterface {
         Type typeExpression = expression.typeCheck(typeEnvironment);
         Type typeVar = typeEnvironment.lookup(varName);
         if(!typeExpression.equals(new StringType()))
-            throw new InterpreterException("ReadFile expression's value type is not a string");
+            throw new InterpreterException("ReadFileStatement: ReadFile expression's value type is not a string");
         if(!typeVar.equals(new IntType()))
-            throw new InterpreterException("ReadFile value is not an integer");
+            throw new InterpreterException("ReadFileStatement: ReadFile value is not an integer");
         return typeEnvironment;
     }
 }

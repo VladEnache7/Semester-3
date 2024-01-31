@@ -19,7 +19,7 @@ public class VariableDeclarationStatement implements StatementInterface{
     public ProgramState execute(ProgramState state) throws InterpreterException {
         MyDictionaryInterface<String, Value> symbolTable = state.getSymbolTable();
         if(symbolTable.isDefined(name))
-            throw new InterpreterException("Variable is already declared");
+            throw new InterpreterException("VariableDeclarationStatement: Variable is already declared");
         else{
             symbolTable.add(name, type.getDefault());
         }

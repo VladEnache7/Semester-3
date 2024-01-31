@@ -19,7 +19,7 @@ public class Repository implements RepositoryInterface {
     public Repository(String logFilePath) throws InterpreterException {
         try{
             // test if filePath is correct else throw exception
-            PrintWriter testPath = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
+            PrintWriter testPath = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, false)));
         } catch (IOException exception) {
             throw new InterpreterException(exception.getMessage());
         }
@@ -82,7 +82,7 @@ public class Repository implements RepositoryInterface {
 
     public void resetProgramStates() throws InterpreterException {
          if(programStatesList.isEmpty())
-            throw new InterpreterException("Program state list is empty");
+            throw new InterpreterException("Repository: Program state list is empty");
         programStatesList.get(0).resetProgramState();
     }
 

@@ -89,6 +89,33 @@
     )
 )
 
+;-------------------------- solution with map functions
+
+; <------------- Mathematical Model ------------->
+; minn(e, other) = 
+;       { e, if other is null
+;       { e, if e > minn(other)
+;       { minn(other(i)), i = 1,n 
+(defun minn (e &rest other)
+    (cond
+        ((null other) e) 
+        ((< e (apply #'minn other)) e)
+        (t (apply #'minn other))
+    )
+)
+
+; <------------- Mathematical Model ------------->
+; minAll2(e) =
+;       { e, if e number
+;       { 100000, if e atom
+;       { minn(minAll2(e(i))), i = 1,n if e list
+(defun minAll2 (e)
+    (cond
+        ((numberp e) e)
+        ((Atom e) 1000000)
+        (t (apply #'minn (mapcar #'minall2 e)))
+    )
+)
 
 ; ------------------------------- d) -------------------------------
 ;d) Write a function that deletes from a linear list of all occurrences of the maximum element.

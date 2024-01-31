@@ -26,13 +26,13 @@ public class CloseReadFileStatement implements StatementInterface {
             throw new InterpreterException("CloseReadFile expression is not a string");
         StringValue stringValue = (StringValue) expression.evaluate(symbolTable, state.getHeap()); // downcasting
         if(!fileTable.isDefined(stringValue))
-            throw new InterpreterException("File is not defined in the file table");
+            throw new InterpreterException("CloseReadFileStatement: File is not defined in the file table");
         // close the file
         try {
             fileTable.lookup(stringValue).close();
             fileTable.remove(stringValue);
         } catch (java.io.IOException exception) {
-            throw new InterpreterException("File cannot be closed " + exception.getMessage());
+            throw new InterpreterException("CloseReadFileStatement: File cannot be closed " + exception.getMessage());
         }
         state.setFileTable(fileTable);
         return null;

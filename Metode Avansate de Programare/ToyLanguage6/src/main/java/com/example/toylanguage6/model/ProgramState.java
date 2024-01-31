@@ -64,7 +64,7 @@ public class ProgramState {
 
     public ProgramState oneStep() throws InterpreterException {
         if(executionStack.isEmpty())
-            throw new InterpreterException("Program state stack is empty");
+            throw new InterpreterException("ProgramState: Program state stack is empty");
         StatementInterface currentStatement = executionStack.pop();
         return currentStatement.execute(this);
     }

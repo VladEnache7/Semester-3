@@ -101,7 +101,9 @@ public class Controller {
 
         List<Callable<ProgramState>> callList = programStateList.stream()
                 .map((ProgramState programState)->(Callable<ProgramState>)(programState::oneStep))
-                .toList();
+                .collect(Collectors.toList());
+
+        Collections.shuffle(callList);
         // start the execution of the callables
         // it returns the list of new created PrgStates(namely, threads)
         try {
@@ -181,7 +183,7 @@ public class Controller {
             repo.setProgramStatesList(programStateList);
         }
         else {
-            throw new InterpreterException("Execution has finished. Program state list is empty.");
+            throw new InterpreterException("Controller: Execution has finished. Program state list is empty.");
         }
         executor.shutdown();
     }

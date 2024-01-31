@@ -31,7 +31,7 @@ public class WhileStatement implements StatementInterface {
 
         Value valueOfExpression = this.expression.evaluate(state.getSymbolTable(), state.getHeap());
         if(!(valueOfExpression instanceof BoolValue))
-            throw new InterpreterException("Expression not of type bool");
+            throw new InterpreterException("WhileStatement: Expression not of type bool");
 
         if(((BoolValue)valueOfExpression).getValue()) { // if the expression is true
             executionStack.push(this.deepCopy());

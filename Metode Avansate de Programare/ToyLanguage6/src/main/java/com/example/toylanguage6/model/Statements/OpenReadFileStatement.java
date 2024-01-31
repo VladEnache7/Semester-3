@@ -28,13 +28,13 @@ public class OpenReadFileStatement implements StatementInterface {
         if(value.getType().equals(new StringType())){
             StringValue stringValue = (StringValue) value;
             if(fileTable.isDefined(stringValue))
-                throw new InterpreterException("File is already opened");
+                throw new InterpreterException("OpenReadFileStatement: File is already opened");
             else {
                 try {
                     BufferedReader reader = new BufferedReader(new java.io.FileReader(stringValue.getValue()));
                     fileTable.add(stringValue, reader);
                 } catch (java.io.IOException exception) {
-                    throw new InterpreterException("File cannot be opened " + exception.getMessage());
+                    throw new InterpreterException("OpenReadFileStatement: File cannot be opened " + exception.getMessage());
                 }
             }
         } else

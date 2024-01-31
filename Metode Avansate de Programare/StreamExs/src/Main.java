@@ -52,10 +52,10 @@ public class Main {
 //
 //        Optional<String> firstQWord = processWords.apply("O");
 //        firstQWord.ifPresent(System.out::println);
-        String exercise6 = words.stream()
-                .reduce((s1, s2) -> s1.toUpperCase() + s2.toUpperCase())
-                .toString();
-        System.out.println(exercise6);
+//        String exercise6 = words.stream()
+//                .reduce((s1, s2) -> s1.toUpperCase() + s2.toUpperCase())
+//                .toString();
+//        System.out.println(exercise6);
 //        String exercise6 = words.stream()
 //                .map(String::toUpperCase)
 //                .reduce("", (s1, s2) -> s1 + s1);
