@@ -34,7 +34,9 @@ public class MyDictionary<AnyTypeKey, AnyTypeValue> implements MyDictionaryInter
     @Override
     public void update(AnyTypeKey key, AnyTypeValue newValue) throws InterpreterException {
         try {
-            this.map.replace(key, newValue);
+            synchronized (this) {
+                this.map.replace(key, newValue);
+            }
         } catch (Exception e) {
             throw new InterpreterException("The key " + key.toString() + " does not exist in the dictionary!");
         }
@@ -44,7 +46,9 @@ public class MyDictionary<AnyTypeKey, AnyTypeValue> implements MyDictionaryInter
     public AnyTypeValue lookup(AnyTypeKey key) throws InterpreterException {
         if(!this.isDefined(key))
             throw new InterpreterException("The key " + key.toString() + " does not exist in the dictionary!");
-        return this.map.get(key);
+        synchronized (this) {
+            return this.map.get(key);
+        }
     }
 
     @Override
@@ -54,12 +58,16 @@ public class MyDictionary<AnyTypeKey, AnyTypeValue> implements MyDictionaryInter
 
     @Override
     public boolean isDefined(AnyTypeKey key){
-        return this.map.containsKey(key);
+        synchronized (this) {
+            return this.map.containsKey(key);
+        }
     }
 
     @Override
     public Collection<AnyTypeValue> values(){
-        return this.map.values();
+        synchronized (this) {
+            return this.map.values();
+        }
     }
 
     @Override

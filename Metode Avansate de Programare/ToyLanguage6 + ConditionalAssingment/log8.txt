@@ -1,0 +1,633 @@
+------- Program State: ------
+ID = 5
+executionStack = 
+| int v |
+| (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| v = 4 |
+| (while(v > 0) { (print(v); v = v - 1) }; print(v)) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| (while(v > 0) { (print(v); v = v - 1) }; print(v)) |
+, heap = {}
+, symbolTable = {v = 4}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 4}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| (print(v); v = v - 1) |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 4}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| print(v) |
+| v = v - 1 |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 4}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| v = v - 1 |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 4}
+, output = [4]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 3}
+, output = [4]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| (print(v); v = v - 1) |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 3}
+, output = [4]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| print(v) |
+| v = v - 1 |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 3}
+, output = [4]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| v = v - 1 |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 3}
+, output = [4, 3]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 2}
+, output = [4, 3]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| (print(v); v = v - 1) |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 2}
+, output = [4, 3]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| print(v) |
+| v = v - 1 |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 2}
+, output = [4, 3]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| v = v - 1 |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 2}
+, output = [4, 3, 2]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 1}
+, output = [4, 3, 2]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| (print(v); v = v - 1) |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 1}
+, output = [4, 3, 2]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| print(v) |
+| v = v - 1 |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 1}
+, output = [4, 3, 2]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| v = v - 1 |
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 1}
+, output = [4, 3, 2, 1]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| while(v > 0) { (print(v); v = v - 1) } |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = [4, 3, 2, 1]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| print(v) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = [4, 3, 2, 1]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+
+, heap = {}
+, symbolTable = {v = 0}
+, output = [4, 3, 2, 1, 0]
+, fileTable = {}
+, originalProgram = (int v; (v = 4; (while(v > 0) { (print(v); v = v - 1) }; print(v))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| int v |
+| (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| Ref(int) a |
+| (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))))) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))))) |
+, heap = {}
+, symbolTable = {a = (0, int), v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| v = 10 |
+| (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))) |
+, heap = {}
+, symbolTable = {a = (0, int), v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))) |
+, heap = {}
+, symbolTable = {a = (0, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| new(a, 22) |
+| (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))) |
+, heap = {}
+, symbolTable = {a = (0, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))) |
+| (print(v); print(readHeap(a))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| (print(v); print(readHeap(a))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| (writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a))))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))
+
+
+------- Program State: ------
+ID = 4
+executionStack = 
+| print(v) |
+| print(readHeap(a)) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 5
+executionStack = 
+| writeHeap(a, 30) |
+| (v = 32; (print(v); print(readHeap(a)))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int v |
+| (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| Ref(int) a |
+| (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))))) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))))) |
+, heap = {}
+, symbolTable = {a = (0, int), v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| v = 10 |
+| (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))) |
+, heap = {}
+, symbolTable = {a = (0, int), v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))) |
+, heap = {}
+, symbolTable = {a = (0, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| new(a, 22) |
+| (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))) |
+, heap = {}
+, symbolTable = {a = (0, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a)))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))) |
+| (print(v); print(readHeap(a))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (print(v); print(readHeap(a))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a))))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(v) |
+| print(readHeap(a)) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| writeHeap(a, 30) |
+| (v = 32; (print(v); print(readHeap(a)))) |
+, heap = {1=22}
+, symbolTable = {a = (1, int), v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(readHeap(a)) |
+, heap = {1=30}
+, symbolTable = {a = (1, int), v = 10}
+, output = [10]
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (v = 32; (print(v); print(readHeap(a)))) |
+, heap = {1=30}
+, symbolTable = {a = (1, int), v = 10}
+, output = [10]
+, fileTable = {}
+, originalProgram = (writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+
+, heap = {1=30}
+, symbolTable = {a = (1, int), v = 10}
+, output = [10, 30]
+, fileTable = {}
+, originalProgram = (int v; (Ref(int) a; (v = 10; (new(a, 22); (fork((writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))); (print(v); print(readHeap(a))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| v = 32 |
+| (print(v); print(readHeap(a))) |
+, heap = {1=30}
+, symbolTable = {a = (1, int), v = 10}
+, output = [10, 30]
+, fileTable = {}
+, originalProgram = (writeHeap(a, 30); (v = 32; (print(v); print(readHeap(a)))))
+
+

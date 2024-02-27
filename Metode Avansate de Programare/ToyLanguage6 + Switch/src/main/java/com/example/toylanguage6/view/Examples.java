@@ -250,10 +250,8 @@ public class Examples {
                                                                             new PrintStatement(new ValueExpression(new IntValue(100))),
                                                                             new PrintStatement(new ValueExpression(new IntValue(200)))
                                                                     ),
-                                                                    new CompoundStatement(
-                                                                            new PrintStatement(new ValueExpression(new IntValue(300))),
-                                                                            new PrintStatement(new ValueExpression(new IntValue(300)))
-                                                                    )
+                                                                    new PrintStatement(new ValueExpression(new IntValue(300)))
+
                                                             ),
                                                             new PrintStatement(new ValueExpression(new IntValue(300)))
                                                     )
@@ -263,7 +261,6 @@ public class Examples {
                     )
             )
     );
-
 
     public static StatementInterface[] exampleList(){
         return new StatementInterface[]{example1, example2, example3, example4, example5, example6, example7, example8, example9, example10};

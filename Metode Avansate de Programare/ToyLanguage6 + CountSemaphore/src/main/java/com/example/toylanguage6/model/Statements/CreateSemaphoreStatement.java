@@ -32,6 +32,13 @@ public class CreateSemaphoreStatement implements StatementInterface {
 
             synchronized (state.getSemaphoreTable()){
                 int newFreeLocation = state.getSemaphoreTable().put(new Pair<>(expressionInt, new Vector<>())); // Vector is synchronized
+
+                if (!state.getSymbolTable().isDefined( this.variableName))
+                    throw new InterpreterException("The variable " + this.variableName + " is not declared!");
+
+                if(!state.getSymbolTable().lookup(this.variableName).getType().equals(new IntType()))
+                    throw new InterpreterException("The variable " + this.variableName + " is not of type int!");
+
                 state.getSymbolTable().add(this.variableName, new IntValue(newFreeLocation));
             }
         } catch (InterpreterException e){

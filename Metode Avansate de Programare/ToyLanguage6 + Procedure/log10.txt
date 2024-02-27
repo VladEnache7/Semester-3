@@ -1,0 +1,502 @@
+------- Program State: ------
+ID = 1
+executionStack = 
+| int v |
+| (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))) |
+, heap = {}
+, symbolTable = 
+| {} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))) |
+, heap = {}
+, symbolTable = 
+| {v = 0} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int w |
+| (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w)))))))) |
+, heap = {}
+, symbolTable = 
+| {v = 0} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w)))))))) |
+, heap = {}
+, symbolTable = 
+| {w = 0, v = 0} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| v = 2 |
+| (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))) |
+, heap = {}
+, symbolTable = 
+| {w = 0, v = 0} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))) |
+, heap = {}
+, symbolTable = 
+| {w = 0, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| w = 5 |
+| (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w)))))) |
+, heap = {}
+, symbolTable = 
+| {w = 0, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w)))))) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| sum(v * 10, w) |
+| (print(v); fork((product(v, w); fork(sum(v, w))))) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (int s; (s = a + b; print(s))) |
+| return |
+| (print(v); fork((product(v, w); fork(sum(v, w))))) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 20, w = 5, v = 2} |
+| {w = 5, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int s |
+| (s = a + b; print(s)) |
+| return |
+| (print(v); fork((product(v, w); fork(sum(v, w))))) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 20, w = 5, v = 2} |
+| {w = 5, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (s = a + b; print(s)) |
+| return |
+| (print(v); fork((product(v, w); fork(sum(v, w))))) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 20, w = 5, v = 2, s = 0} |
+| {w = 5, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| s = a + b |
+| print(s) |
+| return |
+| (print(v); fork((product(v, w); fork(sum(v, w))))) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 20, w = 5, v = 2, s = 0} |
+| {w = 5, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(s) |
+| return |
+| (print(v); fork((product(v, w); fork(sum(v, w))))) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 20, w = 5, v = 2, s = 25} |
+| {w = 5, v = 2} |
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| return |
+| (print(v); fork((product(v, w); fork(sum(v, w))))) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 20, w = 5, v = 2, s = 25} |
+| {w = 5, v = 2} |
+, output = [25]
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (print(v); fork((product(v, w); fork(sum(v, w))))) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25]
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(v) |
+| fork((product(v, w); fork(sum(v, w)))) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25]
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| fork((product(v, w); fork(sum(v, w)))) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (int v; (int w; (v = 2; (w = 5; (sum(v * 10, w); (print(v); fork((product(v, w); fork(sum(v, w))))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (product(v, w); fork(sum(v, w))) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| product(v, w) |
+| fork(sum(v, w)) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (int p; (p = a * b; print(p))) |
+| return |
+| fork(sum(v, w)) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2} |
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| int p |
+| (p = a * b; print(p)) |
+| return |
+| fork(sum(v, w)) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2} |
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (p = a * b; print(p)) |
+| return |
+| fork(sum(v, w)) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2, p = 0} |
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| p = a * b |
+| print(p) |
+| return |
+| fork(sum(v, w)) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2, p = 0} |
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| print(p) |
+| return |
+| fork(sum(v, w)) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2, p = 10} |
+| {w = 5, v = 2} |
+, output = [25, 2]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| return |
+| fork(sum(v, w)) |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2, p = 10} |
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| fork(sum(v, w)) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = (product(v, w); fork(sum(v, w)))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| sum(v, w) |
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = sum(v, w)
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (int s; (s = a + b; print(s))) |
+| return |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2} |
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = sum(v, w)
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| int s |
+| (s = a + b; print(s)) |
+| return |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2} |
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = sum(v, w)
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (s = a + b; print(s)) |
+| return |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2, s = 0} |
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = sum(v, w)
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| s = a + b |
+| print(s) |
+| return |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2, s = 0} |
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = sum(v, w)
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| print(s) |
+| return |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2, s = 7} |
+| {w = 5, v = 2} |
+, output = [25, 2, 10]
+, fileTable = {}
+, originalProgram = sum(v, w)
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| return |
+, heap = {}
+, symbolTable = 
+| {b = 5, a = 2, w = 5, v = 2, s = 7} |
+| {w = 5, v = 2} |
+, output = [25, 2, 10, 7]
+, fileTable = {}
+, originalProgram = sum(v, w)
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+
+, heap = {}
+, symbolTable = 
+| {w = 5, v = 2} |
+, output = [25, 2, 10, 7]
+, fileTable = {}
+, originalProgram = sum(v, w)
+
+

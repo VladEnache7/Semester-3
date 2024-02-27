@@ -73,3 +73,558 @@ executionStack =
 -> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
 
 
+------- Program State: ------
+ID = 1
+executionStack = 
+| createSemaphore(cnt, readHeap(v1)) |
+| (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt))))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 0, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt))))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))) |
+| (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt)))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))) |
+| (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| acquireSemaphore(cnt) |
+| (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt))))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| writeHeap(v1, readHeap(v1) * 10) |
+| (print(readHeap(v1)); releaseSemaphore(cnt)) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| acquireSemaphore(cnt) |
+| (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))) |
+-> heap = {1=1}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (print(readHeap(v1)); releaseSemaphore(cnt)) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| acquireSemaphore(cnt) |
+| (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| print(readHeap(v1)) |
+| releaseSemaphore(cnt) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| acquireSemaphore(cnt) |
+| (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = []
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| releaseSemaphore(cnt) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| acquireSemaphore(cnt) |
+| (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[2]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| acquireSemaphore(cnt) |
+| (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| writeHeap(v1, readHeap(v1) * 10) |
+| (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt))) |
+-> heap = {1=10}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=100}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt))) |
+-> heap = {1=100}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=100}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| writeHeap(v1, readHeap(v1) * 2) |
+| (print(readHeap(v1)); releaseSemaphore(cnt)) |
+-> heap = {1=100}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| (print(readHeap(v1)); releaseSemaphore(cnt)) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| print(readHeap(v1)) |
+| releaseSemaphore(cnt) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| acquireSemaphore(cnt) |
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10, 200]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+| releaseSemaphore(cnt) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10, 200]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[3]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (print(readHeap(v1) - 1); releaseSemaphore(cnt)) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10, 200]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[1]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 3
+executionStack = 
+
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10, 200]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[1]}
+-> originalProgram = (acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(readHeap(v1) - 1) |
+| releaseSemaphore(cnt) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10, 200]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[1]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| releaseSemaphore(cnt) |
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10, 200, 199]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[1]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+
+-> heap = {1=200}
+-> symbolTable = {cnt = 1, v1 = (1, int)}
+-> output = [10, 200, 199]
+-> fileTable = {}
+-> semaphoreTable{1 = 1=[]}
+-> originalProgram = (Ref(int) v1; (int cnt; (new(v1, 1); (createSemaphore(cnt, readHeap(v1)); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (print(readHeap(v1)); releaseSemaphore(cnt))))); (fork((acquireSemaphore(cnt); (writeHeap(v1, readHeap(v1) * 10); (writeHeap(v1, readHeap(v1) * 2); (print(readHeap(v1)); releaseSemaphore(cnt)))))); (acquireSemaphore(cnt); (print(readHeap(v1) - 1); releaseSemaphore(cnt)))))))))
+
+

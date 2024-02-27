@@ -9,11 +9,6 @@ import com.example.toylanguage6.model.ProgramState;
 import com.example.toylanguage6.model.Types.Type;
 
 public class SwitchStatement implements StatementInterface {
-    @Override
-    public String toString() {
-        return "switch(" + this.expression.toString() + ") (case " + this.expression1.toString() + ": " + this.statement1.toString() + ") (case " + this.expression2.toString() + ": " + this.statement2.toString() + ") (default: " + this.statement3.toString() + ")";
-    }
-
     private final Expression expression;
     private final Expression expression1;
     private final StatementInterface statement1;
@@ -44,10 +39,7 @@ public class SwitchStatement implements StatementInterface {
         return null;
     }
 
-    @Override
-    public StatementInterface deepCopy() {
-        return new SwitchStatement(this.expression.deepCopy(), this.expression1.deepCopy(), this.statement1.deepCopy(), this.expression2.deepCopy(), this.statement2.deepCopy(), this.statement3.deepCopy());
-    }
+
 
     @Override
     public MyDictionaryInterface<String, Type> typeCheck(MyDictionaryInterface<String, Type> typeEnvironment) throws InterpreterException {
@@ -63,6 +55,16 @@ public class SwitchStatement implements StatementInterface {
             this.statement3.typeCheck(typeEnvironment.deepCopy());
             return typeEnvironment;
         } else
-            throw new InterpreterException("Expression, case1 and case2 are not of the same type!");
+            throw new InterpreterException("SwitchStatement: Expression, case1 and case2 are not of the same type!");
+    }
+
+    @Override
+    public StatementInterface deepCopy() {
+        return new SwitchStatement(this.expression.deepCopy(), this.expression1.deepCopy(), this.statement1.deepCopy(), this.expression2.deepCopy(), this.statement2.deepCopy(), this.statement3.deepCopy());
+    }
+
+    @Override
+    public String toString() {
+        return "switch(" + this.expression.toString() + ") (case " + this.expression1.toString() + ": " + this.statement1.toString() + ") (case " + this.expression2.toString() + ": " + this.statement2.toString() + ") (default: " + this.statement3.toString() + ")";
     }
 }

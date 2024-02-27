@@ -219,3 +219,445 @@ executionStack =
 , originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: (print(300); print(300))); print(300))))))))
 
 
+------- Program State: ------
+ID = 1
+executionStack = 
+| int a |
+| (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))) |
+, heap = {}
+, symbolTable = {a = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int b |
+| (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))) |
+, heap = {}
+, symbolTable = {a = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))) |
+, heap = {}
+, symbolTable = {b = 0, a = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int c |
+| (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))) |
+, heap = {}
+, symbolTable = {b = 0, a = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))) |
+, heap = {}
+, symbolTable = {b = 0, a = 0, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| a = 1 |
+| (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))) |
+, heap = {}
+, symbolTable = {b = 0, a = 0, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))) |
+, heap = {}
+, symbolTable = {b = 0, a = 1, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| b = 2 |
+| (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))) |
+, heap = {}
+, symbolTable = {b = 0, a = 1, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| c = 5 |
+| (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| if (a * 10 == b * c) then ((print(a); print(b))) else (if (a * 10 == 10) then ((print(100); print(200))) else (print(300))) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (print(a); print(b)) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(a) |
+| print(b) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(b) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = [1]
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = [1, 2]
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = [1, 2, 300]
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int a |
+| (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))) |
+, heap = {}
+, symbolTable = {a = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int b |
+| (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))) |
+, heap = {}
+, symbolTable = {a = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))) |
+, heap = {}
+, symbolTable = {b = 0, a = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int c |
+| (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))) |
+, heap = {}
+, symbolTable = {b = 0, a = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))) |
+, heap = {}
+, symbolTable = {b = 0, a = 0, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| a = 1 |
+| (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))) |
+, heap = {}
+, symbolTable = {b = 0, a = 0, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))) |
+, heap = {}
+, symbolTable = {b = 0, a = 1, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| b = 2 |
+| (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))) |
+, heap = {}
+, symbolTable = {b = 0, a = 1, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| c = 5 |
+| (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| if (a * 10 == b * c) then ((print(a); print(b))) else (if (a * 10 == 10) then ((print(100); print(200))) else (print(300))) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (print(a); print(b)) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(a) |
+| print(b) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = []
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(b) |
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = [1]
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(300) |
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = [1, 2]
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+
+, heap = {}
+, symbolTable = {b = 2, a = 1, c = 5}
+, output = [1, 2, 300]
+, fileTable = {}
+, originalProgram = (int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+
+

@@ -1,0 +1,197 @@
+------- Program State: ------
+ID = 1
+executionStack = 
+| bool b |
+| (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))) |
+, heap = {}
+, symbolTable = {b = false}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| int c |
+| (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c))))) |
+, heap = {}
+, symbolTable = {b = false}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c))))) |
+, heap = {}
+, symbolTable = {b = false, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| b = true |
+| (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))) |
+, heap = {}
+, symbolTable = {b = false, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))) |
+, heap = {}
+, symbolTable = {b = true, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| c = (b) ? 100 : 200 |
+| (print(c); (c = (false) ? 100 : 200; print(c))) |
+, heap = {}
+, symbolTable = {b = true, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| if (b) then (c = 100) else (c = 200) |
+| (print(c); (c = (false) ? 100 : 200; print(c))) |
+, heap = {}
+, symbolTable = {b = true, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| c = 100 |
+| (print(c); (c = (false) ? 100 : 200; print(c))) |
+, heap = {}
+, symbolTable = {b = true, c = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (print(c); (c = (false) ? 100 : 200; print(c))) |
+, heap = {}
+, symbolTable = {b = true, c = 100}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(c) |
+| (c = (false) ? 100 : 200; print(c)) |
+, heap = {}
+, symbolTable = {b = true, c = 100}
+, output = []
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (c = (false) ? 100 : 200; print(c)) |
+, heap = {}
+, symbolTable = {b = true, c = 100}
+, output = [100]
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| c = (false) ? 100 : 200 |
+| print(c) |
+, heap = {}
+, symbolTable = {b = true, c = 100}
+, output = [100]
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| if (false) then (c = 100) else (c = 200) |
+| print(c) |
+, heap = {}
+, symbolTable = {b = true, c = 100}
+, output = [100]
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| c = 200 |
+| print(c) |
+, heap = {}
+, symbolTable = {b = true, c = 100}
+, output = [100]
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(c) |
+, heap = {}
+, symbolTable = {b = true, c = 200}
+, output = [100]
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+
+, heap = {}
+, symbolTable = {b = true, c = 200}
+, output = [100, 200]
+, fileTable = {}
+, originalProgram = (bool b; (int c; (b = true; (c = (b) ? 100 : 200; (print(c); (c = (false) ? 100 : 200; print(c)))))))
+
+

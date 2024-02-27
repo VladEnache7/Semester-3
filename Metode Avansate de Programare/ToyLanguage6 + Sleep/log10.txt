@@ -1,0 +1,183 @@
+------- Program State: ------
+ID = 1
+executionStack = 
+| int v |
+| (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))) |
+, heap = {}
+, symbolTable = {}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| v = 10 |
+| (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10))) |
+, heap = {}
+, symbolTable = {v = 0}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10))) |
+, heap = {}
+, symbolTable = {v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| fork((v = v - 1; (v = v - 1; print(v)))) |
+| (sleep(1); print(v * 10)) |
+, heap = {}
+, symbolTable = {v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| (sleep(1); print(v * 10)) |
+, heap = {}
+, symbolTable = {v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (v = v - 1; (v = v - 1; print(v))) |
+, heap = {}
+, symbolTable = {v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (v = v - 1; (v = v - 1; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| sleep(1) |
+| print(v * 10) |
+, heap = {}
+, symbolTable = {v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| v = v - 1 |
+| (v = v - 1; print(v)) |
+, heap = {}
+, symbolTable = {v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (v = v - 1; (v = v - 1; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| sleep(0) |
+| print(v * 10) |
+, heap = {}
+, symbolTable = {v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| (v = v - 1; print(v)) |
+, heap = {}
+, symbolTable = {v = 9}
+, output = []
+, fileTable = {}
+, originalProgram = (v = v - 1; (v = v - 1; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+| print(v * 10) |
+, heap = {}
+, symbolTable = {v = 10}
+, output = []
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| v = v - 1 |
+| print(v) |
+, heap = {}
+, symbolTable = {v = 9}
+, output = []
+, fileTable = {}
+, originalProgram = (v = v - 1; (v = v - 1; print(v)))
+
+
+------- Program State: ------
+ID = 1
+executionStack = 
+
+, heap = {}
+, symbolTable = {v = 10}
+, output = [100]
+, fileTable = {}
+, originalProgram = (int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(1); print(v * 10)))))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+| print(v) |
+, heap = {}
+, symbolTable = {v = 8}
+, output = [100]
+, fileTable = {}
+, originalProgram = (v = v - 1; (v = v - 1; print(v)))
+
+
+------- Program State: ------
+ID = 2
+executionStack = 
+
+, heap = {}
+, symbolTable = {v = 8}
+, output = [100, 8]
+, fileTable = {}
+, originalProgram = (v = v - 1; (v = v - 1; print(v)))
+
+

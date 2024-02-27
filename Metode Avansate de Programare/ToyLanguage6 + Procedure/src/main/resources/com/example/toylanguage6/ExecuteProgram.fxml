@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="450.0" minWidth="1350.0" prefHeight="448.0" prefWidth="1332.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.toylanguage6.ExecuteProgramController">
+   <children>
+      <HBox layoutX="6.0" layoutY="15.0" prefHeight="384.0" prefWidth="1313.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="226.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="246.0" text="Number of Program States:">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.666666984558105" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="noOfPrograms">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="19.0" prefWidth="217.0" text="States:">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.666666984558105" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="programStates" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="400.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="19.0" prefWidth="428.0" text="Execution Stack:">
+                     <font>
+                        <Font name="System Bold Italic" size="12.666666984558105" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="executionStack" prefHeight="127.0" prefWidth="380.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <Label alignment="CENTER" prefHeight="19.0" prefWidth="409.0" text="Heap Table:">
+                     <font>
+                        <Font name="System Bold Italic" size="12.666666984558105" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="heapTable" prefHeight="137.0" prefWidth="380.0">
+                    <columns>
+                      <TableColumn fx:id="addressColumnHeapTable" prefWidth="100.0" text="Address" />
+                      <TableColumn fx:id="valueColumnHeapTable" prefWidth="104.0" text="Value" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="234.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="19.0" prefWidth="285.0" text="Symbol Table:">
+                     <font>
+                        <Font name="System Bold Italic" size="12.666666984558105" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="symbolTable" prefHeight="281.0" prefWidth="210.0">
+                    <columns>
+                      <TableColumn fx:id="symbolColumnSymbolTable" prefWidth="98.0" text="Symbol" />
+                      <TableColumn fx:id="valueColumnSymbolTable" prefWidth="111.0" text="Value" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="195.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="19.0" prefWidth="267.0" text="Output:">
+                     <font>
+                        <Font name="System Bold Italic" size="12.666666984558105" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="output" prefHeight="284.0" prefWidth="171.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ListView>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="240.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="339.0" text="File Table:">
+                     <font>
+                        <Font name="System Bold Italic" size="12.666666984558105" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="fileTable" prefHeight="145.0" prefWidth="220.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="339.0" text="Procedure Table:">
+                     <font>
+                        <Font name="System Bold Italic" size="12.666666984558105" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="procedureTable" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="nameColumnProcedureTable" prefWidth="122.66675317287445" text="Name + Parameters" />
+                      <TableColumn fx:id="bodyColumnProcedureTable" prefWidth="118.0" text="Body" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="runOneStepButton" layoutX="579.0" layoutY="399.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="134.0" text="Run One Step">
+         <font>
+            <Font name="System Bold Italic" size="12.666666984558105" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -177,7 +177,7 @@ public class Controller {
     public MyHeapInterface<Value> getHeapTable() {return this.getProgramStatesList().get(0).getHeap();}
 
     public void oneStepForAllProgramsGUI() throws InterpreterException {
-        this.executor = Executors.newFixedThreadPool(4);
+        this.executor = Executors.newFixedThreadPool(2);
         List<ProgramState> programStateList = removeCompletedPrograms(repo.getProgramStatesList());
         if(!programStateList.isEmpty()) {
             oneStepForAllPrograms(programStateList);

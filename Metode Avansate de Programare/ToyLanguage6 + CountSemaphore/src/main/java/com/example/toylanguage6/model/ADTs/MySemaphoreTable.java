@@ -14,9 +14,9 @@ public class MySemaphoreTable extends MyDictionary<Integer, Pair<Integer, List<I
     }
 
     @Override
-    public int put(Pair<Integer, List<Integer>> value) throws InterpreterException {
+    public int put(Pair<Integer, List<Integer>> pair) throws InterpreterException {
         synchronized (this) {
-            this.add(this.freeAddress, value);
+            this.add(this.freeAddress, pair);
             this.freeAddress++;
             return this.freeAddress - 1;
         }
