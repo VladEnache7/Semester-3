@@ -1,26 +1,64 @@
-# Toy Language Interpreter (Java)
 
-![Java](https://img.shields.io/badge/Java-11%2B-orange)
-![License](https://img.shields.io/badge/License-MIT-purple)
+# ☕ Advanced Programming Methods (MAP)
 
-Greetings! Welcome to the Toy Language Interpreter repository. Our project is a Java-based interpreter for a simple toy language that provides support for a wide range of features. 
+This course explores advanced paradigms in modern software development. It relies heavily on **Java** to teach Functional Programming (Streams/Lambda), Concurrency, and GUI development (JavaFX), before introducing the **.NET ecosystem (C#)** for comparison.
 
-The interpreter supports various data types, including integer, float, boolean, string, and reference data types. You can evaluate arithmetic, logical, and relational expressions, and display results and messages in the interpreter using print statements. You can also implement conditional logic in your code using if statements and support for while and for loops.
+### 📅 Weekly Syllabus
 
-In addition, the interpreter allows you to allocate memory for variables at runtime in the heap, and automatically frees memory for unused variables using garbage collection. You can also run multiple threads in parallel and ensure thread safety with synchronized blocks. Moreover, our type checker checks for type errors in your code, making it easier to debug.
+The Laboratories and Seminars follow the lecture topics weekly, building a complex semester-long project (often a Social Network or Management System).
 
-One of the standout features of our interpreter is the GUI debugger, which enables you to step through code and inspect variables in a graphical user interface (GUI) debugger. This feature makes it easier to understand and debug code, especially for beginners.
+| Week | 👨‍🏫 Lecture Content | 💻 Laboratory & Seminar Focus |
+|:---:|:---|:---|
+| **1** | **Java Intro:** Syntax, Enums, Exceptions, Packages | **Project Start:** Basic Java project structure |
+| **2** | **Core Java:** Collections, Generics, Polymorphism | **Data Layer:** Implementing Repositories with Collections |
+| **3** | **IO & NIO:** Streams, Files, Channels, Buffers | **Persistence:** File-based data storage (Generics) |
+| **4** | **Functional:** Lambda expressions, Stream API | **Logic Layer:** Functional validation & filtering |
+| **5** | **GUI (JavaFX):** Components, Event Handling | **Functional:** Advanced Stream operations |
+| **6** | **Concurrency I:** Threads, Executors, Futures | **GUI:** Building the first Interface (JavaFX) |
+| **7** | **Concurrency II:** Sync vs Async, Callbacks | **Concurrency:** Making the app responsive (background tasks) |
+| **8** | **Data Formats:** XML Schema, Documents | **Persistence:** XML file parsing and storage |
+| **9** | **Advanced GUI:** FXML, CSS, Reflection, Serialization | **GUI Polish:** Styling with CSS & FXML integration |
+| **10** | **.NET Intro:** C# Basics, Platform overview | **C# Migration:** Basic C# project setup |
+| **11** | **C# Collections:** Lists, Dictionaries, Enumerables | **C# Data:** Porting Logic/Data layers to C# |
+| **12** | **C# IO:** Streams and File operations | **C# Persistence:** File operations in .NET |
+| **13** | **C# GUI:** Windows Forms / WPF concepts | **C# UI:** Building the interface in C# |
+| **14** | **LINQ:** Language Integrated Query | **Final Polish:** Using LINQ for data manipulation |
 
-## Features
+---
 
-- **Gui Debugger**: Step through code and inspect variables in a graphical user interface (GUI) debugger.
-- **Data Types**: Support for integer, float, boolean, string, and reference data types.
-- **Expressions**: Evaluate arithmetic, logical, and relational expressions.
-- **Print Statements**: Display results and messages in the interpreter.
-- **If Statements**: Implement conditional logic in your code.
-- **Loops**: Support for while and for loops.
-- **Dynamic Allocation**: Allocate memory for variables at runtime in the heap.
-- **Garbage Collection**: Automatically free memory for unused variables.
-- **Threads**: Run multiple threads in parallel.
-- **Synchronization**: Ensure thread safety with synchronized blocks.
-- **Type Checker**: Check for type errors in your code.
+### 📚 Key Topics Breakdown
+
+<details>
+<summary><strong>Click to expand detailed topic list</strong></summary>
+
+#### Part I: Advanced Java
+*   **Generics:** Type erasure, Wildcards (`? extends T`), Custom generic classes.
+*   **Functional Programming:**
+    *   `Function<T,R>`, `Predicate<T>`, `Supplier<T>`, `Consumer<T>`.
+    *   **Streams API:** `map`, `filter`, `reduce`, `collect`, `flatMap`.
+*   **Concurrency:**
+    *   `ExecutorService`, `Callable`, `Future`.
+    *   Synchronization and Thread safety.
+    *   Producer-Consumer problems.
+*   **JavaFX:**
+    *   Stage, Scene, Node Graph.
+    *   Observer Pattern (Listeners and Properties).
+    *   FXML for separating View from Logic.
+
+#### Part II: C# & .NET
+*   **Comparison:** Java vs C# syntax differences (Properties, Delegates, Events).
+*   **LINQ:** The declarative query syntax for collections (comparable to Java Streams but often more expressive).
+*   **Reflection:** Inspecting code metadata at runtime.
+
+</details>
+
+---
+
+### 🛠️ Resources & Tools
+
+*   **IntelliJ IDEA** - IDE for the Java portion.
+*   **Visual Studio** - IDE for the C# portion.
+*   **SceneBuilder** - Visual layout tool for JavaFX (FXML).
+---
+
+> *"Java is to JavaScript what car is to Carpet."* — (Classic Programming Joke)
